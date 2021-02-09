@@ -1,0 +1,244 @@
+/*header*/
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+
+.nav{
+   display:flex;
+
+   background-color:#3F66C9;
+   border-radius: 5px;
+}
+
+#change{
+    display: flex;
+    
+    height:90px;
+    width:30%;
+    background-size:195px 95px;
+    margin: 5px 5px 5px 5px;
+    background-repeat: no-repeat;
+    background-image: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Montserrat', sans-serif;}
+
+.center{
+    display:flex;
+    height:70px;
+    width:65%;
+}
+.menu {
+   display:flex;
+   justify-content: space-around;
+   align-items: flex-end;
+   width:30%;
+   height: 85px;
+   margin-left: 0px;
+ 
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu a:hover{
+    font-size: 20px;
+    color:#EED243;
+    font-weight: bolder;
+}
+.mobileMenu{
+    color:whitesmoke;
+}
+/*body*/
+#bodyContent{
+    display: flex;
+    
+}
+.asideContent{
+    width: 20%;
+    margin: 20px;
+  
+}
+.asideLeftContent
+{
+font-size: 15px;
+}
+
+.asideLeftContentBottom{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif; 
+}
+#mainRightContent{
+   display:flex;
+height: 80vh;
+  width:90%;
+}
+
+
+.card1{
+
+    background: url("../UX_UI_HW_19.1/images/PantryChef.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    width:50%;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+    
+    
+}
+/*.style{
+    margin-top: 350px;
+    height: 50px;
+    display:grid;
+    background-color:rgba(0,0,0,0.7) ;
+    align-items: center;
+    color: white;
+    padding-left:10px ;
+}*/
+
+.card2
+{
+    
+    background: url("../UX_UI_HW_19.1/images/Toysfortots.png"
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    width:60%;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+}  
+/*footer*/
+
+#footer{
+   
+  
+    height:100px;
+}
+.icons{
+  
+   display: flex;
+   background-color:#3F66C9;
+   height:100px;
+   align-items: center;
+   justify-content: space-evenly;
+   color:whitesmoke;
+   font-family: 'Poppins', sans-serif;
+}
+.footer4{
+    display: flex;
+    justify-self: center;
+    height:50px;
+    
+}
+@media only screen and (max-width: 600px) {
+   body{
+       overflow: hidden;
+   }
+    .nav{
+        display:flex;
+     
+        background-color:#3F66C9;
+        border-radius: 5px;
+     }
+     
+     .mobileMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        
+    }    
+     .mobileHam {
+        display:block;
+        background-color: #EED243;
+    }
+     .menu a{
+      position: absolute;
+      right:0px;
+      height:70vh;
+      top:11vh;
+      background-color: #3F66C9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      transform:translateX(100%);
+      transition:transform 0.5s ease-in;
+     }
+    img{
+        padding-left: 20px;
+    }
+     
+    #bodyContent{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    h1{
+       display: none;
+    }
+    .asideLeftContent p{
+        display: flex;
+        background-color: gold;
+width: 270px;
+border-radius: 10px;
+padding: 5px;
+    }
+    .asideLeftContentBottom{
+        display: none;
+    }
+
+    #mainRightContent{
+        display:flex;
+        flex-direction: column;
+   
+     }
+    
+    
+     .card1{
+
+        background: url("../UX_UI_HW_19.1/images/PantryChef.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30%;
+        width:100%;
+      border-radius: 20px;
+     
+        
+        
+    }
+ 
+    
+    .card2
+    {
+        
+        background: url("../UX_UI_HW_19.1/images/Toysfortots.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 30%;
+        width:90%;
+        
+        padding: 20px;
+        margin: 20px;
+    }  
+
+   
+} 
